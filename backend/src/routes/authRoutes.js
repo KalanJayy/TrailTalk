@@ -33,6 +33,7 @@ router.post("/register", async (req,res) => {
         if (existingEmail){
             return res.status(400).json({message: "Email already exists" })
         }
+        
 
         //get random avatar
         const profileImage = `https://api.dicebear.com/7.x/avataaars/svg?seed=${username}`;
