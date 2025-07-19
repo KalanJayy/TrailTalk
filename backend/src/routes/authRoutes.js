@@ -1,9 +1,10 @@
 import express from "express";
 import User from "../models/User.js";
+import jwt from "jsonwebtoken";
 
 const router = express.Router();
 
-const generateToken = (userID) => {
+const generateToken = (userId) => {
     return jwt.sign({userId}, process.env.JWT_SECRET, {expiresIn: "15d"})
 }
 
@@ -11,7 +12,7 @@ router.post("/register", async (req,res) => {
     try {
         const {email, username, password} = req.body;
 
-        if (!username || email || password){
+        if (!username || !email || !password){
             return res.status(400).json({message: "All fields are required"})
         }
 
@@ -61,7 +62,11 @@ router.post("/register", async (req,res) => {
 });
 
 router.post("/login", async (req,res) => {
-    res.send("login");
+    try {
+        const {email, password} = req.body;
+    } catch (error) {
+        
+    }
 });
 
 
