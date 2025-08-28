@@ -16,6 +16,11 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api/books", bookRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Backend is running ✅");
+});
+
+
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`);
     connectDB();
