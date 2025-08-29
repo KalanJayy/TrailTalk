@@ -3,7 +3,7 @@ import { Link } from "expo-router"
 import styles from "../../assets/styles/login.styles"
 import { useState } from 'react';
 import COLORS from '../../constants/colors';
-import { Ionicons } from "@expo/vector-icons"
+import { Ionicons } from "@expo/vector-icons";
 import { useAuthStore } from '../../store/authStore';
 
 export default function Login() {

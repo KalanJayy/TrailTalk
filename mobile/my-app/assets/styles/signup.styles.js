@@ -1,96 +1,122 @@
 // styles/signup.styles.js
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import COLORS from "../../constants/colors";
+
+const { width } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
+    flex: 1,
     backgroundColor: COLORS.background,
-    padding: 20,
+    alignItems: "center",
     justifyContent: "center",
-  },
-  card: {
-    backgroundColor: COLORS.cardBackground,
-    borderRadius: 16,
     padding: 24,
-    shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
-    borderWidth: 2,
-    borderColor: COLORS.border,
   },
+
   header: {
     alignItems: "center",
     marginBottom: 32,
   },
   title: {
-    fontSize: 32,
-    fontWeight: "700",
+    fontSize: 34,
+    fontWeight: "800",
     fontFamily: "JetBrainsMono-Medium",
-    color: COLORS.primary,
+    color: COLORS.textPrimary,
+    textAlign: "center",
     marginBottom: 8,
+    letterSpacing: 1,
   },
   subtitle: {
     fontSize: 16,
     color: COLORS.textSecondary,
     textAlign: "center",
+    lineHeight: 22,
+    paddingHorizontal: 20,
   },
-  formContainer: { marginBottom: 16 },
-  inputGroup: { marginBottom: 20 },
+
+  formContainer: {
+    width: "100%",
+    alignItems: "center",
+    marginBottom: 24,
+  },
+  inputGroup: {
+    width: "100%",
+    marginBottom: 18,
+  },
   label: {
     fontSize: 14,
-    marginBottom: 8,
+    marginBottom: 6,
     color: COLORS.textPrimary,
-    fontWeight: "500",
+    fontWeight: "600",
+    textAlign: "center",
   },
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: COLORS.inputBackground,
-    borderRadius: 12,
+    borderRadius: 30,
     borderWidth: 1,
     borderColor: COLORS.border,
-    paddingHorizontal: 12,
+    paddingHorizontal: 16,
+    height: 50,
+    alignSelf: "center",
+    width: "85%",
   },
-  inputIcon: { marginRight: 10 },
+  inputIcon: {
+    marginRight: 10,
+    opacity: 0.7,
+  },
   input: {
     flex: 1,
-    height: 48,
+    fontSize: 15,
     color: COLORS.textDark,
+    textAlign: "center", // same centered input style
   },
-  eyeIcon: { padding: 8 },
+  eyeIcon: {
+    padding: 6,
+  },
+
   button: {
     backgroundColor: COLORS.primary,
-    borderRadius: 12,
-    height: 50,
+    borderRadius: 10,
+    height: 52,
+    padding: 10,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 16,
+    marginTop: 10,
+    width: "85%",
+    alignSelf: "center",
     shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 2,
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
+    elevation: 3,
   },
   buttonText: {
     color: COLORS.white,
-    fontSize: 16,
-    fontWeight: "600",
+    fontSize: 17,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+    textAlign: "center",
   },
+
   footer: {
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: 24,
+    marginTop: 28,
   },
   footerText: {
     color: COLORS.textSecondary,
-    marginRight: 5,
+    fontSize: 14,
+    marginRight: 6,
+    textAlign: "center",
   },
   link: {
     color: COLORS.primary,
-    fontWeight: "600",
+    fontWeight: "700",
+    fontSize: 14,
+    textDecorationLine: "underline",
+    textAlign: "center",
   },
 });
 

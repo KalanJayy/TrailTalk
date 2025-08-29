@@ -1,17 +1,19 @@
 // FOREST
 const COLORS = {
-  primary: "#4CAF50",
-  textPrimary: "#2e5a2e",
-  textSecondary: "#688f68",
-  textDark: "#1b361b",
-  placeholderText: "#767676",
-  background: "#e8f5e9",
-  cardBackground: "#f1f8f2",
-  inputBackground: "#f4faf5",
-  border: "#c8e6c9",
-  white: "#ffffff",
-  black: "#000000",
+  primary: "#FF6B35",        // Vibrant sunset orange (eye-catching)
+  textPrimary: "#bf481cff",    // Deep forest green for strong readable text
+  textSecondary: "#4A5568",  // Mountain stone gray for secondary text
+  textDark: "#1A365D",       // Deep mountain blue for headings
+  placeholderText: "#A0AEC0",// Misty gray for placeholder
+  background: "#F7FAFC",     // Fresh morning mist background
+  cardBackground: "#FFFFFF", // Pure white for modern cards
+  inputBackground: "#EDF2F7",// Light cloud gray for inputs
+  border: "#E2E8F0",         // Subtle morning fog border
+  white: "#FFFFFF",          // White
+  black: "#000000",          // Black
+  accent: "#38A169",         // Fresh trail green accent for success/positive actions
 };
+
 
 // RETRO
 /*
